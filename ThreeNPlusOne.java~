@@ -1,0 +1,33 @@
+public class ThreeNPlusOne {
+  
+  // finds max Cycle of an integer
+  // @param i is the low number
+  // @param j is the high number
+  public int findMaxCycle(int i, int j) {
+    
+    int maxCycle = 0;
+    int counter = 0;
+    for (i; i <= j; i++) {
+      while (i > 1) {
+        if (i % 2 = 1) {
+          i = (i * 3) + 1;
+          counter++;
+        } else if (i % 2 = 0) {
+          i = i / 2;
+          counter++;
+        }
+      }
+      if (counter > maxCycle) {
+        maxCycle = counter;
+      }
+      counter = 0;            // reset counter
+    }
+    return maxCycle;
+  }
+        
+        
+  public static void main(String[] args) {
+    System.out.println(i + j + findMaxCycle(1, 10));
+  }
+}
+   
